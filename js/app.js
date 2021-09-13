@@ -19,14 +19,14 @@ const showProducts = (products) => {
       <h4>${product.title.slice(0, 37)}</h4>
       <p>Category: ${product.category}</p>
       <p class="d-flex justify-content-around fw-bold">
-      <span><i class="fas icon fa-star"></i> ${product.rating.rate}</span>
-      <span><i class="fas icon fa-user"></i> ${product.rating.count}</span>
+      <span>Rating: <i class="fas icon fa-star"></i> ${product.rating.rate}</span>
+      <span>Users: <i class="fas icon fa-user"></i> ${product.rating.count}</span>
       </p>
       <h3>Price: $ ${product.price}</h3>
-      <div class="d-flex justify-content-around">
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-danger">Details</button>
-  </div>
+      <div class="card-btn">
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-primary">Add to cart</button>
+      <button id="details-btn" class="btn btn-success btn-details">Details</button>
+      </div>
       </div>
       
       `;
