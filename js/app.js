@@ -6,7 +6,6 @@ const loadProducts = () => {
 
 // show all product in UI 
 const showProducts = (products) => {
-  console.log(products);
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
     const image = product.image;
@@ -47,7 +46,6 @@ const addToCart = (id, price) => {
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
-  console.log(converted);
   return converted;
 };
 
