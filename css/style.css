@@ -5,6 +5,12 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* -------------------------------------Search btn style-------------------------------- */
+.border-btn{
+  border: 1px solid gray;
+  padding: 5px;
+}
+
 /* -------------------------------All products and container style--------------------- */
 #all-products {
   display: grid;
@@ -40,11 +46,11 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  bottom: 40px;
-  margin-left: 24px;
+  bottom: 35px;
+  margin-left: 34px;
 }
 .btn-details{
-  margin-left:120px ;
+  margin-left:90px ;
 }
 
 /* ----------------------------------------My cart style---------------------------------- */
